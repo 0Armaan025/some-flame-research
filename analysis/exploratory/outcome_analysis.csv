@@ -1,0 +1,25 @@
+analysis,group,metric,outcome,n_fuel,count,proportion,notes
+E_outcome,fuel=Methanol,outcome_count,Extinction,157,126,0.8025,recorded experimental outcome label
+E_outcome,fuel=Methanol,outcome_count,Disruption,157,23,0.1465,recorded experimental outcome label
+E_outcome,fuel=Methanol,outcome_count,Completion,157,8,0.0510,recorded experimental outcome label
+E_outcome,fuel=Methanol,d_ext_measured_within_Extinction,Extinction,126,103,0.8175,"visible flame extinction diameter is a MEASUREMENT, distinct from the outcome label; label without measurement is never imputed"
+E_outcome,fuel=Methanol,d_ext_measured_within_Disruption,Disruption,23,9,0.3913,"visible flame extinction diameter is a MEASUREMENT, distinct from the outcome label; label without measurement is never imputed"
+E_outcome,fuel=Methanol,d_ext_measured_within_Completion,Completion,8,5,0.6250,"visible flame extinction diameter is a MEASUREMENT, distinct from the outcome label; label without measurement is never imputed"
+E_outcome,fuel=Heptane,outcome_count,Extinction,117,60,0.5128,recorded experimental outcome label
+E_outcome,fuel=Heptane,outcome_count,Disruption,117,38,0.3248,recorded experimental outcome label
+E_outcome,fuel=Heptane,outcome_count,Completion,117,19,0.1624,recorded experimental outcome label
+E_outcome,fuel=Heptane,d_ext_measured_within_Extinction,Extinction,60,56,0.9333,"visible flame extinction diameter is a MEASUREMENT, distinct from the outcome label; label without measurement is never imputed"
+E_outcome,fuel=Heptane,d_ext_measured_within_Disruption,Disruption,38,15,0.3947,"visible flame extinction diameter is a MEASUREMENT, distinct from the outcome label; label without measurement is never imputed"
+E_outcome,fuel=Heptane,d_ext_measured_within_Completion,Completion,19,9,0.4737,"visible flame extinction diameter is a MEASUREMENT, distinct from the outcome label; label without measurement is never imputed"
+E_outcome,fuel=All,outcome_count,Extinction,274,186,0.6788,recorded experimental outcome label
+E_outcome,fuel=All,outcome_count,Disruption,274,61,0.2226,recorded experimental outcome label
+E_outcome,fuel=All,outcome_count,Completion,274,27,0.0985,recorded experimental outcome label
+E_outcome,fuel=All,d_ext_measured_within_Extinction,Extinction,186,159,0.8548,"visible flame extinction diameter is a MEASUREMENT, distinct from the outcome label; label without measurement is never imputed"
+E_outcome,fuel=All,d_ext_measured_within_Disruption,Disruption,61,24,0.3934,"visible flame extinction diameter is a MEASUREMENT, distinct from the outcome label; label without measurement is never imputed"
+E_outcome,fuel=All,d_ext_measured_within_Completion,Completion,27,14,0.5185,"visible flame extinction diameter is a MEASUREMENT, distinct from the outcome label; label without measurement is never imputed"
+E_outcome_fuel_test,All,fisher_exact_outcome_vs_rest,Extinction,MeOH 157 / Hep 117,"a=126,b=31,c=60,d=57",5.16e-07,"two-sided Fisher exact, outcome vs rest, unadjusted; Holm-adjusted values in p_holm below; exploratory only, independence caveat"
+E_outcome_fuel_test,All,fisher_exact_outcome_vs_rest,Disruption,MeOH 157 / Hep 117,"a=23,b=134,c=38,d=79",0.000662,"two-sided Fisher exact, outcome vs rest, unadjusted; Holm-adjusted values in p_holm below; exploratory only, independence caveat"
+E_outcome_fuel_test,All,fisher_exact_outcome_vs_rest,Completion,MeOH 157 / Hep 117,"a=8,b=149,c=19,d=98",0.00346,"two-sided Fisher exact, outcome vs rest, unadjusted; Holm-adjusted values in p_holm below; exploratory only, independence caveat"
+E_outcome_fuel_test,All,holm_adjusted_p,Extinction,MeOH 157 / Hep 117,"a=126,b=31,c=60,d=57",1.55e-06,Holm-Bonferroni adjustment across the 3 outcome contrasts
+E_outcome_fuel_test,All,holm_adjusted_p,Disruption,MeOH 157 / Hep 117,"a=23,b=134,c=38,d=79",0.00132,Holm-Bonferroni adjustment across the 3 outcome contrasts
+E_outcome_fuel_test,All,holm_adjusted_p,Completion,MeOH 157 / Hep 117,"a=8,b=149,c=19,d=98",0.00346,Holm-Bonferroni adjustment across the 3 outcome contrasts

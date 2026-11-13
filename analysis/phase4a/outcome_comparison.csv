@@ -1,0 +1,14 @@
+analysis,group,outcome,n_fuel,count,proportion,denominator_note
+A_outcome,fuel=Methanol,Extinction,157,126,0.8025,recorded outcome label; label definitions unverified for Disruption
+A_outcome,fuel=Methanol,Disruption,157,23,0.1465,recorded outcome label; label definitions unverified for Disruption
+A_outcome,fuel=Methanol,Completion,157,8,0.0510,recorded outcome label; label definitions unverified for Disruption
+A_outcome,fuel=Heptane,Extinction,117,60,0.5128,recorded outcome label; label definitions unverified for Disruption
+A_outcome,fuel=Heptane,Disruption,117,38,0.3248,recorded outcome label; label definitions unverified for Disruption
+A_outcome,fuel=Heptane,Completion,117,19,0.1624,recorded outcome label; label definitions unverified for Disruption
+A_outcome_fisher,Methanol vs Heptane,Extinction,157/117,"a=126,b=31,c=60,d=57",5.16e-07,"odds ratio 3.861 (95% CI 2.262-6.591); two-sided Fisher exact, outcome vs rest, unadjusted; descriptive contrast, independence not established"
+A_outcome_fisher,Methanol vs Heptane,Disruption,157/117,"a=23,b=134,c=38,d=79",0.000662,"odds ratio 0.357 (95% CI 0.198-0.642); two-sided Fisher exact, outcome vs rest, unadjusted; descriptive contrast, independence not established"
+A_outcome_fisher,Methanol vs Heptane,Completion,157/117,"a=8,b=149,c=19,d=98",0.00346,"odds ratio 0.277 (95% CI 0.117-0.657); two-sided Fisher exact, outcome vs rest, unadjusted; descriptive contrast, independence not established"
+A_outcome_fisher_holm,Methanol vs Heptane,Extinction,157/117,,1.55e-06,Holm-Bonferroni adjusted across the 3 outcome contrasts
+A_outcome_fisher_holm,Methanol vs Heptane,Disruption,157/117,,0.00132,Holm-Bonferroni adjusted across the 3 outcome contrasts
+A_outcome_fisher_holm,Methanol vs Heptane,Completion,157/117,,0.00346,Holm-Bonferroni adjusted across the 3 outcome contrasts
+A_outcome_table,Methanol vs Heptane,2x3 table,157/117,126/23/8;60/38/19,FH p=1.75e-06; Cramers V=0.3099; chi2=26.31,"Freeman-Halton exact test for the 2x3 table; Cramer's V effect size (small~0.07, medium~0.21, large~0.35 heuristic)"

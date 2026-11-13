@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FLEX-PSI69 evidence-intelligence response schema",
+  "description": "Response contract for POST /query. Every answer is deterministic and traceable; numbers are recomputed from the raw table or quoted from frozen, hash-verified analysis artifacts.",
+  "type": "object",
+  "required": ["question_id", "question", "direct_answer", "numerical_findings",
+               "method", "limitations"],
+  "properties": {
+    "question_id": {"type": "string", "enum": ["Q1", "Q2", "Q3", "Q4", "Q5", "Q6", "Q7"]},
+    "question": {"type": "string"},
+    "direct_answer": {"type": "string",
+      "description": "Plain-language answer, bounded by the evidence"},
+    "supporting_experiments": {
+      "type": "array",
+      "description": "Experiment records supporting the answer (Q4 lists the comparable set)",
+      "items": {"$ref": "#/definitions/experiment"}
+    },
+    "numerical_findings": {
+      "type": "object",
+      "description": "All computed numbers with denominators; empty object when none are supported"
+    },
+    "evidence_ranking": {
+      "type": "array",
+      "description": "Per-evidence-item ranking with four independent dimensions and a documented band",
+      "items": {"$ref": "#/definitions/ranked_evidence"}
+    },
+    "method": {"type": "string",
+      "description": "The deterministic procedure that produced the numbers"},
+    "important_exclusions": {"type": "array", "items": {"type": "string"}},
+    "contradictory_or_conflicting_evidence": {"type": "array", "items": {"type": "string"}},
+    "limitations": {"type": "array", "items": {"type": "string"},
+      "description": "Always non-empty; must be rendered by the UI"},
+    "what_would_resolve_uncertainty": {"type": "array", "items": {"type": "string"}},
+    "traceability": {"type": "array", "items": {"type": "string"},
+      "description": "Files or raw rows the answer derives from"}
+  },
+  "definitions": {
+    "experiment": {
+      "type": "object",
+      "required": ["flex_test_no", "flex_identifier", "fuel", "outcome"],
+      "properties": {
+        "flex_test_no": {"type": "string"},
+        "flex_identifier": {"type": "string"},
+        "series": {"type": "string"},
+        "test_date": {"type": "string"},
+        "test_gmt": {"type": "string"},
+        "fuel": {"type": "string"},
+        "pressure_mmHg": {"type": ["number", "null"]},
+        "o2_mf": {"type": ["number", "null"]},
+        "n2_mf": {"type": ["number", "null"]},
+        "co2_mf": {"type": ["number", "null"]},
+        "he_mf": {"type": ["number", "null"]},
+        "d0_mm": {"type": ["number", "null"]},
+        "d_ext_mm": {"type": ["number", "null"]},
+        "burn_time_s": {"type": ["number", "null"]},
+        "outcome": {"type": "string"},
+        "flags": {"type": "array", "items": {"type": "string"}},
+        "complete_core": {"type": "boolean"},
+        "provenance": {"type": "string"}
+      }
+    },
+    "ranked_evidence": {
+      "type": "object",
+      "required": ["label", "dimensions", "band"],
+      "properties": {
+        "label": {"type": "string"},
+        "dimensions": {
+          "type": "object",
+          "required": ["relevance", "data_quality", "comparability",
+                       "statistical_strength"],
+          "properties": {
+            "relevance": {"$ref": "#/definitions/dimension"},
+            "data_quality": {"$ref": "#/definitions/dimension"},
+            "comparability": {"$ref": "#/definitions/dimension"},
+            "statistical_strength": {"$ref": "#/definitions/dimension"}
+          }
+        },
+        "band": {"type": "string",
+          "enum": ["high", "moderate", "low", "excluded_from_primary_evidence"]},
+        "banding_rule": {"type": "string",
+          "description": "The explicit rule that produced the band; no opaque composite score is reported"}
+      }
+    },
+    "dimension": {
+      "type": "object",
+      "required": ["score", "reason"],
+      "properties": {
+        "score": {"type": "number", "minimum": 0, "maximum": 1},
+        "reason": {"type": "string"}
+      }
+    }
+  }
+}

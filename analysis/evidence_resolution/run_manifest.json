@@ -1,0 +1,82 @@
+{
+  "analysis": "FLEX PSI-69 Phase 3.5 evidence resolution",
+  "script": {
+    "name": "run_resolution.py",
+    "version": "3.5.0",
+    "entrypoint": "notebooks/.venv/bin/python analysis/evidence_resolution/run_resolution.py"
+  },
+  "executed_utc": "2026-11-12T17:16:46.885236+00:00",
+  "environment": {
+    "python": "3.14.9",
+    "platform": "Linux-7.2.14-arch1-1-x86_64-with-glibc2.44",
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2"
+  },
+  "inputs": [
+    {
+      "path": "data/raw/flex/PSI-69 Experimental table_FLEX.csv",
+      "sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96",
+      "records": 274,
+      "encoding": "latin-1 byte-preserving; 0x96 = missing marker"
+    }
+  ],
+  "documents_inspected": [
+    "data/raw/flex/PSI-69_Experimental table_FLEX.csv",
+    "data/raw/flex/s_PSI-69.txt",
+    "data/raw/flex/part-01/",
+    "data/raw/flex/part-01/*.zip (23 archives)",
+    "docs/flex/i_Investigation.txt",
+    "docs/flex/FLEX_EIRD_v4.pdf",
+    "docs/flex/FLEX_Test_Plan.pdf",
+    "docs/flex/FLEX Engineering Requirements Document.pdf",
+    "docs/flex/FLEX DoD.docx",
+    "docs/flex/FLEX Overall Ext File-2.pdf",
+    "notebooks/ (10 exploration scripts)",
+    "data/interim/flex/ (8 artifacts)",
+    "data/processed/ (3 files)",
+    "reports/telemetry_gc.tsv, reports/video_gc.tsv",
+    "docs/jaxa/, data/raw/jaxa_group_combustion/, docs/tnf/, data/raw/tnf/"
+  ],
+  "archive_metadata_inspected": {
+    "archives": 23,
+    "total_uncompressed_gb": 16.12,
+    "method": "zip directory listings + in-memory first/middle/last frame header reads; NO bulk extraction performed"
+  },
+  "integrity": {
+    "protected_files_checked": 42,
+    "note": "full per-file hashes for Phases 1-3 are asserted in tests/test_resolution.py"
+  },
+  "outputs": {
+    "resolution_checks.csv": {
+      "sha256": "c57e2a2fdd902784d06b074230c3b66efc9528cc2b03512ef2ff97ef09aeb57c",
+      "rows": 23
+    },
+    "source_document_register.csv": {
+      "sha256": "1873b6f3d41d92a328b3060209d05062ce5f52bf921a60a860915340f6372791",
+      "rows": 15
+    },
+    "evidence_resolution_register.csv": {
+      "sha256": "2aca0f46f5c0d7b4396a91074bcc0e77a9e53b31cfd6e88fda7ef12cdb84c722",
+      "rows": 18
+    },
+    "correction_register.csv": {
+      "sha256": "7828897b6195ec15bb1453d8e1391820bff2fec3d59662281f60244288788a53",
+      "rows": 4
+    }
+  },
+  "restrictions": {
+    "modelling": "none performed",
+    "imputation": "none",
+    "renormalisation": "none",
+    "unit_assignment": "none",
+    "archive_extraction": "none beyond in-memory header reads",
+    "external_contact": "none"
+  },
+  "limitations": [
+    "Burning-rate column definition remains unavailable locally; the identifying publications (NTRS 20150023456; DOI 10.1007/s12217-014-9377-x) are not local files.",
+    "'Disruption' is undefined in every inspected document.",
+    "Clock offsets are quantified per run but no synchronization reference exists.",
+    "Calibration records are absent locally; only spec-level accuracies and one indirect PSIA cross-check exist.",
+    "Per-run temperature/gravity/fiber metadata exist only for the 8 telemetry-linked runs."
+  ]
+}

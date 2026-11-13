@@ -1,0 +1,22 @@
+{
+  "component": "recorded-outcome prediction model",
+  "status": "validated and available (delegated, not duplicated)",
+  "authoritative_location": "prediction/artifacts/",
+  "model_file": "prediction/artifacts/outcome_model.joblib",
+  "manifest": "prediction/artifacts/model_manifest.json",
+  "model_manifest_sha256": "see prediction/artifacts/model_manifest.json (hashes recorded inside)",
+  "rationale": (
+    "The intelligence engine delegates prediction to the Phase 6 prediction "
+    "package rather than copying model binaries, so there is exactly one "
+    "validated model and one source of truth. Validation evidence: "
+    "prediction/tests/test_prediction.py (20 tests, all passing) with "
+    "series-grouped out-of-fold evaluation; grouped-OOF balanced accuracy "
+    "0.530 vs 0.333 majority baseline, every fold above baseline."
+  ),
+  "usage": "POST /predict on the intelligence API delegates to prediction.predict.predict_outcome",
+  "caveats": [
+    "predicts the recorded outcome label, not physical combustion behaviour",
+    "burning-rate column is not a feature (unit unresolved)",
+    "group-aware evaluation used; experimental independence remains unestablished"
+  ]
+}

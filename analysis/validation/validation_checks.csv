@@ -1,0 +1,36 @@
+quantity,value,source
+n_records,274,independent recomputation by run_validation.py from data/raw/flex/PSI-69_Experimental table_FLEX.csv
+n_methanol,157,independent recomputation by run_validation.py from data/raw/flex/PSI-69_Experimental table_FLEX.csv
+n_heptane,117,independent recomputation by run_validation.py from data/raw/flex/PSI-69_Experimental table_FLEX.csv
+n_complete_core,196,independent recomputation by run_validation.py from data/raw/flex/PSI-69_Experimental table_FLEX.csv
+n_distinct_dates,80,independent recomputation by run_validation.py from data/raw/flex/PSI-69_Experimental table_FLEX.csv
+max_records_per_date,9,independent recomputation by run_validation.py from data/raw/flex/PSI-69_Experimental table_FLEX.csv
+n_series_prefixes,81,independent recomputation by run_validation.py from data/raw/flex/PSI-69_Experimental table_FLEX.csv
+largest_series_prefix,"[""C03"", 13]",independent recomputation by run_validation.py from data/raw/flex/PSI-69_Experimental table_FLEX.csv
+families_methanol,46,independent recomputation by run_validation.py from data/raw/flex/PSI-69_Experimental table_FLEX.csv
+families_heptane,37,independent recomputation by run_validation.py from data/raw/flex/PSI-69_Experimental table_FLEX.csv
+families_shared,31,independent recomputation by run_validation.py from data/raw/flex/PSI-69_Experimental table_FLEX.csv
+records_in_shared_families_methanol,115,independent recomputation by run_validation.py from data/raw/flex/PSI-69_Experimental table_FLEX.csv
+records_in_shared_families_heptane,106,independent recomputation by run_validation.py from data/raw/flex/PSI-69_Experimental table_FLEX.csv
+o2_levels_methanol,15,independent recomputation by run_validation.py from data/raw/flex/PSI-69_Experimental table_FLEX.csv
+o2_levels_heptane,14,independent recomputation by run_validation.py from data/raw/flex/PSI-69_Experimental table_FLEX.csv
+pressure_bands_methanol,"{""560-800 mmHg"": 85, "">2100 mmHg"": 2, ""800-2100 mmHg"": 5, ""<560 mmHg"": 65}",independent recomputation by run_validation.py from data/raw/flex/PSI-69_Experimental table_FLEX.csv
+pressure_bands_heptane,"{""560-800 mmHg"": 76, "">2100 mmHg"": 1, ""800-2100 mmHg"": 1, ""<560 mmHg"": 39}",independent recomputation by run_validation.py from data/raw/flex/PSI-69_Experimental table_FLEX.csv
+n_above_800_mmHg,9,independent recomputation by run_validation.py from data/raw/flex/PSI-69_Experimental table_FLEX.csv
+families_above_800_mmHg,1,independent recomputation by run_validation.py from data/raw/flex/PSI-69_Experimental table_FLEX.csv
+identifier_collision_193F001_count,2,independent recomputation by run_validation.py from data/raw/flex/PSI-69_Experimental table_FLEX.csv
+diluent_cell_O2_0.14,"{""n_co2"": 2, ""n_he"": 2, ""n2_co2"": [0.5], ""n2_he"": [0.51], ""co2_bands"": [""560-800 mmHg""], ""he_bands"": [""560-800 mmHg""]}",independent recomputation
+diluent_cell_O2_0.15,"{""n_co2"": 8, ""n_he"": 2, ""n2_co2"": [0.35, 0.53, 0.54], ""n2_he"": [0.55], ""co2_bands"": [""560-800 mmHg"", ""<560 mmHg""], ""he_bands"": [""560-800 mmHg""]}",independent recomputation
+diluent_cell_O2_0.16,"{""n_co2"": 4, ""n_he"": 3, ""n2_co2"": [0.59], ""n2_he"": [0.59], ""co2_bands"": [""560-800 mmHg""], ""he_bands"": [""560-800 mmHg""]}",independent recomputation
+diluent_cell_O2_0.17,"{""n_co2"": 11, ""n_he"": 10, ""n2_co2"": [0.38, 0.63], ""n2_he"": [0.38, 0.63], ""co2_bands"": [""560-800 mmHg"", ""<560 mmHg""], ""he_bands"": [""560-800 mmHg"", ""<560 mmHg""]}",independent recomputation
+diluent_cell_O2_0.18,"{""n_co2"": 19, ""n_he"": 10, ""n2_co2"": [0.42, 0.67], ""n2_he"": [0.42, 0.67], ""co2_bands"": [""560-800 mmHg"", ""<560 mmHg""], ""he_bands"": [""560-800 mmHg"", ""<560 mmHg""]}",independent recomputation
+diluent_cell_O2_0.19,"{""n_co2"": 5, ""n_he"": 2, ""n2_co2"": [0.71], ""n2_he"": [0.71], ""co2_bands"": [""560-800 mmHg""], ""he_bands"": [""560-800 mmHg""]}",independent recomputation
+diluent_cell_O2_0.2,"{""n_co2"": 18, ""n_he"": 7, ""n2_co2"": [0.44, 0.45, 0.75], ""n2_he"": [0.45, 0.75], ""co2_bands"": [""560-800 mmHg"", ""<560 mmHg""], ""he_bands"": [""560-800 mmHg"", ""<560 mmHg""]}",independent recomputation
+diluent_cell_O2_0.21,"{""n_co2"": 18, ""n_he"": 7, ""n2_co2"": [0.09, 0.49, 0.64], ""n2_he"": [0.49, 0.64], ""co2_bands"": [""560-800 mmHg"", ""800-2100 mmHg"", ""<560 mmHg"", "">2100 mmHg""], ""he_bands"": [""560-800 mmHg"", ""<560 mmHg""]}",independent recomputation
+diluent_cell_O2_0.23,"{""n_co2"": 16, ""n_he"": 3, ""n2_co2"": [0.52, 0.56], ""n2_he"": [0.52], ""co2_bands"": [""<560 mmHg""], ""he_bands"": [""<560 mmHg""]}",independent recomputation
+diluent_cell_O2_0.24,"{""n_co2"": 16, ""n_he"": 3, ""n2_co2"": [0.56], ""n2_he"": [0.56], ""co2_bands"": [""560-800 mmHg"", ""<560 mmHg""], ""he_bands"": [""<560 mmHg""]}",independent recomputation
+diluent_cells_matched_total,10,independent recomputation
+diluent_cells_n2_matched,5,independent recomputation
+diluent_cells_min_side_ge_3,7,independent recomputation
+duplicate_sensitivity_d0_excluding_record_1,"{""U"": 7190.0, ""p_as_reported"": 0.06229, ""U_excluded"": 7036.0, ""p_excluded"": 0.04498}",independent recomputation
+duplicate_sensitivity_d0_excluding_record_2,"{""U"": 7190.0, ""p_as_reported"": 0.06229, ""U_excluded"": 7036.0, ""p_excluded"": 0.04498}",independent recomputation

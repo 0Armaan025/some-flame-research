@@ -1,0 +1,155 @@
+{
+  "analysis": "FLEX PSI-69 Phase 4A comparative results and scientific synthesis",
+  "script": {
+    "name": "run_analysis.py",
+    "version": "4a.1.0",
+    "entrypoint": "notebooks/.venv/bin/python analysis/phase4a/run_analysis.py"
+  },
+  "executed_utc": "2026-11-12T20:59:43.642915+00:00",
+  "environment": {
+    "python": "3.14.9",
+    "platform": "Linux-7.2.14-arch1-1-x86_64-with-glibc2.44",
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2"
+  },
+  "inputs": [
+    {
+      "path": "data/raw/flex/PSI-69 Experimental table_FLEX.csv",
+      "sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96",
+      "expected_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96",
+      "records": 274,
+      "encoding": "latin-1 byte-preserving; 0x96 = missing marker"
+    }
+  ],
+  "headline": {
+    "outcome_table": [
+      [
+        126,
+        23,
+        8
+      ],
+      [
+        60,
+        38,
+        19
+      ]
+    ],
+    "outcome_freeman_halton_p": "1.75e-06",
+    "outcome_cramers_v": "0.3099",
+    "outcome_holm_p": {
+      "Extinction": "1.55e-06",
+      "Disruption": "0.00132",
+      "Completion": "0.00346"
+    },
+    "duration_median_meoh_s": 12.1,
+    "duration_median_hep_s": 7.5,
+    "duration_mwu": {
+      "U": 4838.0,
+      "p": "1.17e-09",
+      "n_meoh": 155,
+      "n_hep": 111
+    },
+    "diameter_mwu": {
+      "U": 7190.0,
+      "p": "0.0623",
+      "n_meoh": 154,
+      "n_hep": 108
+    },
+    "collision_sensitivity_p": 0.045,
+    "permutation_p": {
+      "d0": "0.28",
+      "duration": "5e-06"
+    },
+    "cells": {
+      "full": [
+        "0.16",
+        "0.17",
+        "0.18",
+        "0.24"
+      ],
+      "partial": [
+        "0.2",
+        "0.21",
+        "0.23"
+      ],
+      "rejected": [
+        "0.14",
+        "0.15",
+        "0.19"
+      ]
+    }
+  },
+  "restrictions": {
+    "modelling": "none - no d2-law, no constants, no ML",
+    "imputation": "none",
+    "renormalisation": "none",
+    "unit_assignment": "none (burning-rate unit unresolved)",
+    "telemetry": "none used",
+    "images": "none used",
+    "causal_claims": "none made"
+  },
+  "limitations": [
+    "Column definition and unit unverified; d2-law-constant reading contradicted by the data (Spearman vs d0^2/t: All -0.05, heptane -0.40)",
+    "'Disruption' undefined in all inspected documents; Extinction/Completion only procedurally contextualised",
+    "Adaptive sequential design (documented), 81 series, up to 9 records/date, 193F001 collision and a second duplicate-timestamp cluster",
+    "Six unreconciled clock domains; offsets 1.225-1.712 s with intra-run drift",
+    "Temperature/gravity/fiber known for 8/274 runs; no calibration records; spec-level accuracies only",
+    "1 pressure-zero record (C11M201), 8 zero-mm extinction diameters, 1 d_ext > d0 (within 30 um resolution)",
+    "All 9 records >800 mmHg in one CO2-diluted family",
+    "77 of 274 extinction diameters, 12 initial diameters, 6 burn times, 16 rates missing; mechanism unknown",
+    "Visible flame extinction is not chemical extinction; no radical/species data",
+    "No verified pixel scale; archives inventoried only"
+  ],
+  "outputs": {
+    "results_summary.csv": {
+      "rows": 5,
+      "sha256": "02386367a9d5002b1062453ef27e418bcf29bab1d011b8a3443d0c01d4da90a0"
+    },
+    "outcome_comparison.csv": {
+      "rows": 13,
+      "sha256": "887fa96eba9d4db612fdef58d4731e35644479e68c35813f5ddf74d7dbb7909a"
+    },
+    "duration_comparison.csv": {
+      "rows": 11,
+      "sha256": "727b91bb80fc2f1335fa680f51a0a605a53782415dbaeaca3e0502cc5c9a42cf"
+    },
+    "diameter_comparison.csv": {
+      "rows": 11,
+      "sha256": "05d384360a00b55ceff970edee966fb7e5ab575f47711e321f61e0b42262fbe3"
+    },
+    "extinction_diameter_assessment.csv": {
+      "rows": 16,
+      "sha256": "82a36ed4cb5b277c69252594b251d5172646824ca8e85f764eb6b00fe16050ae"
+    },
+    "condition_comparison.csv": {
+      "rows": 32,
+      "sha256": "c7db61cb937cdd637f8bedddda56b59fbbc5878799dbe2f67513f9c21b219260"
+    },
+    "sensitivity_analysis.csv": {
+      "rows": 12,
+      "sha256": "d8d40fe5f00b6908f321e7989fb0707af57d540055a6e9673a7f6db8b202e520"
+    },
+    "limitations_register.csv": {
+      "rows": 10,
+      "sha256": "1c2366f9a07b332519d384d9f035862121c329148af2c0cf67d358d11e37e909"
+    },
+    "figures/fig01_outcome_distribution.png": {
+      "sha256": "1d645cb7056e5d2a74a80018302d5abc893cb70d8141aeb00f345ef33313858a"
+    },
+    "figures/fig02_burn_duration.png": {
+      "sha256": "9ca306758fd4b3b6a7281374131370dd79b037ac196a8ca7e4575027cb511e5e"
+    },
+    "figures/fig03_initial_diameter.png": {
+      "sha256": "7f702e1c4c3b99c316004bab45c09842b42a19803b90b2eee0ad87b61c79aedf"
+    },
+    "figures/fig04_extinction_diameter.png": {
+      "sha256": "40144306bb73bddbf1055e00459e967bb8c8ad6b277c8d7f3f3a30526b1dad00"
+    },
+    "figures/fig05_condition_cells.png": {
+      "sha256": "5b5a4121c19a2bc1ef73b5064c707e83fb5c84c29d9b12196b6371599315a73d"
+    },
+    "figures/fig06_pressure_confounding.png": {
+      "sha256": "7d5c79fa80a952107dd9767b5d0d568b8f769eae0733e5d88205b1f9769eb5cd"
+    }
+  }
+}

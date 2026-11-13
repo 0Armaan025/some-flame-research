@@ -1,0 +1,182 @@
+{
+  "n_records": 274,
+  "n_methanol": 157,
+  "n_heptane": 117,
+  "exact_dupes": 0,
+  "test_no_dupes": 0,
+  "ident_dupes": {
+    "193F001": 2
+  },
+  "sig_dupes": {},
+  "sum_flags": {
+    "sums to 1.000": 245,
+    "sums to 0.990 (within 0.02 of 1)": 22,
+    "sums to 0.980 (off by >0.02)": 6,
+    "sums to 1.010 (within 0.02 of 1)": 1
+  },
+  "implausible": {
+    "pressure_zero": [
+      [
+        "114",
+        "C11M201",
+        "Methanol"
+      ]
+    ],
+    "extinction_diameter_zero": [
+      [
+        "39",
+        "224F001",
+        "Heptane"
+      ],
+      [
+        "43",
+        "223F002",
+        "Heptane"
+      ],
+      [
+        "51",
+        "209F005",
+        "Heptane"
+      ],
+      [
+        "52",
+        "210F002",
+        "Heptane"
+      ],
+      [
+        "63",
+        "301F002",
+        "Heptane"
+      ],
+      [
+        "69",
+        "193R002",
+        "Heptane"
+      ],
+      [
+        "93",
+        "149F001",
+        "Heptane"
+      ],
+      [
+        "135",
+        "C21H501",
+        "Heptane"
+      ]
+    ],
+    "d_ext_gt_d0": [
+      [
+        "129",
+        "C13H102",
+        "Heptane",
+        3.33,
+        3.34
+      ]
+    ]
+  },
+  "consistency": {
+    "outcome_extinction_with_d_ext": 159,
+    "outcome_extinction_missing_d_ext": 27,
+    "outcome_disruption_with_d_ext": 24,
+    "outcome_completion_with_d_ext": 14
+  },
+  "linked_ids": [
+    "20CAL08",
+    "20CAL10",
+    "20CAL12",
+    "20CAL13",
+    "30CAL02",
+    "30CAL03",
+    "30CAL06",
+    "40CAL01"
+  ],
+  "unlinked_records": 265,
+  "stats": {
+    "Methanol": {
+      "d0_mm": {
+        "n": 154,
+        "mean": "3.08",
+        "median": "3.05",
+        "min": "1.61",
+        "max": "4.53"
+      },
+      "d_ext_mm": {
+        "n": 117,
+        "mean": "1.85",
+        "median": "1.66",
+        "min": "0.4",
+        "max": "3.96"
+      },
+      "burn_rate": {
+        "n": 151,
+        "mean": "0.472",
+        "median": "0.46",
+        "min": "0.2",
+        "max": "0.74"
+      },
+      "burn_time_s": {
+        "n": 156,
+        "mean": "13.5",
+        "median": "11.9",
+        "min": "0.3",
+        "max": "39.2"
+      },
+      "pressure_mmHg": {
+        "n": 157,
+        "mean": "724",
+        "median": "759",
+        "min": "0",
+        "max": "2319.7"
+      }
+    },
+    "Heptane": {
+      "d0_mm": {
+        "n": 108,
+        "mean": "2.88",
+        "median": "2.92",
+        "min": "1.1",
+        "max": "4.67"
+      },
+      "d_ext_mm": {
+        "n": 80,
+        "mean": "2",
+        "median": "2.32",
+        "min": "0",
+        "max": "4.6"
+      },
+      "burn_rate": {
+        "n": 107,
+        "mean": "0.545",
+        "median": "0.54",
+        "min": "0.05",
+        "max": "1.06"
+      },
+      "burn_time_s": {
+        "n": 112,
+        "mean": "7.94",
+        "median": "7.5",
+        "min": "0.55",
+        "max": "24"
+      },
+      "pressure_mmHg": {
+        "n": 117,
+        "mean": "708",
+        "median": "760",
+        "min": "528",
+        "max": "2319.9"
+      }
+    }
+  },
+  "outcome_by_fuel": {
+    "Methanol": {
+      "Disruption": 23,
+      "Extinction": 126,
+      "Completion": 8
+    },
+    "Heptane": {
+      "Disruption": 38,
+      "Extinction": 60,
+      "Completion": 19
+    }
+  }
+}

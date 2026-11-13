@@ -1,0 +1,13 @@
+analysis,variant,variable,n_meoh,n_hep,statistic,p_value,effect_size,note
+S_diameter,as_reported,d0_mm,154,108,MWU U=7190.0,0.0623,rank-biserial r=0.1354,all reported values; methanol n=154 / heptane n=108
+S_duration,as_reported,burn_time_s,155,111,MWU U=4838.0,1.17e-09,rank-biserial r=0.4376,exact values only; the two ~-approximate records excluded
+S_diameter,excluding_193F001_record_1,d0_mm,154,107,MWU U=7036.0,0.045,rank-biserial r=0.1460,FLEX Test #70 removed; neither version preferred
+S_duration,excluding_193F001_record_1,burn_time_s,155,110,MWU U=4834.0,1.93e-09,rank-biserial r=0.4330,FLEX Test #70 removed
+S_diameter,excluding_193F001_record_2,d0_mm,154,107,MWU U=7036.0,0.045,rank-biserial r=0.1460,FLEX Test #73 removed; neither version preferred
+S_duration,excluding_193F001_record_2,burn_time_s,155,110,MWU U=4834.5,1.94e-09,rank-biserial r=0.4329,FLEX Test #73 removed
+S_diameter,screened_flagged_anomalies_excluded,d0_mm,153,99,MWU U=6700.5,0.123,rank-biserial r=0.1153,"excludes the 1 pressure-zero, 8 zero-d_ext and 1 d_ext>d0 records (10 total)"
+S_duration,screened_flagged_anomalies_excluded,burn_time_s,154,102,MWU U=4375.0,2e-09,rank-biserial r=0.4430,same exclusion set
+S_permutation,as_reported,d0_mm,154,108,permutation (median difference),0.28,,"200 000 label permutations, fixed seed 20261112; assumes exchangeable records within fuel - itself not established (see series analysis)"
+S_permutation,as_reported,burn_time_s,155,111,permutation (median difference),5e-06,,same permutation scheme; exact values only
+S_series_level,series_medians,d0_mm,4,4,MWU over per-series medians U=4.0,0.312,rank-biserial r=0.5000,"only 4 of 81 series carry >=3 records of each fuel (C01, C03, C08, C09); sign test: heptane median larger in 1/4 series, two-sided p=0.625; descriptive series-level contrast that does not assume record independence; n_series is small - indicative only"
+S_series_level,series_medians,burn_time_s,4,4,MWU over per-series medians U=0.0,0.0304,rank-biserial r=1.0000,"only 4 of 81 series carry >=3 records of each fuel (C01, C03, C08, C09); sign test: heptane median larger in 0/4 series, two-sided p=0.125; descriptive series-level contrast that does not assume record independence; n_series is small - indicative only"

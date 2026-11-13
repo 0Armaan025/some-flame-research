@@ -1,0 +1,46 @@
+fuel,variable,key,n_records,n_present,n_missing,pct_missing,n_missing_empty_field,n_missing_0x96_byte
+Methanol,FLEX Test #,flex_test_no,157,157,0,0.0,0,0
+Methanol,FLEX Identifier,flex_identifier,157,157,0,0.0,0,0
+Methanol,Test Date,test_date,157,157,0,0.0,0,0
+Methanol,Test GMT,test_gmt,157,157,0,0.0,0,0
+Methanol,Fuel,fuel,157,157,0,0.0,0,0
+Methanol,Ambient pressure; mmHg,pressure_mmHg,157,157,0,0.0,0,0
+Methanol,O initial ambient composition; mole fraction,o2_mf,157,157,0,0.0,0,0
+Methanol,N initial ambient composition; mole fraction,n2_mf,157,157,0,0.0,0,0
+Methanol,CO initial ambient composition; mole fraction,co_mf,157,157,0,0.0,0,0
+Methanol,He initial ambient composition; mole fraction,he_mf,157,157,0,0.0,0,0
+Methanol,Droplet initial diameter; mm,d0_mm,157,154,3,1.9,2,1
+Methanol,Visible flame extinction diameter; mm,d_ext_mm,157,117,40,25.5,23,17
+Methanol,Burning rate; mm,burn_rate,157,151,6,3.8,5,1
+Methanol,Burn time; s,burn_time_s,157,156,1,0.6,1,0
+Methanol,Test end,test_end,157,157,0,0.0,0,0
+Heptane,FLEX Test #,flex_test_no,117,117,0,0.0,0,0
+Heptane,FLEX Identifier,flex_identifier,117,117,0,0.0,0,0
+Heptane,Test Date,test_date,117,117,0,0.0,0,0
+Heptane,Test GMT,test_gmt,117,116,1,0.9,1,0
+Heptane,Fuel,fuel,117,117,0,0.0,0,0
+Heptane,Ambient pressure; mmHg,pressure_mmHg,117,117,0,0.0,0,0
+Heptane,O initial ambient composition; mole fraction,o2_mf,117,117,0,0.0,0,0
+Heptane,N initial ambient composition; mole fraction,n2_mf,117,117,0,0.0,0,0
+Heptane,CO initial ambient composition; mole fraction,co_mf,117,117,0,0.0,0,0
+Heptane,He initial ambient composition; mole fraction,he_mf,117,117,0,0.0,0,0
+Heptane,Droplet initial diameter; mm,d0_mm,117,108,9,7.7,2,7
+Heptane,Visible flame extinction diameter; mm,d_ext_mm,117,80,37,31.6,20,17
+Heptane,Burning rate; mm,burn_rate,117,107,10,8.5,3,7
+Heptane,Burn time; s,burn_time_s,117,112,5,4.3,2,3
+Heptane,Test end,test_end,117,117,0,0.0,0,0
+All,FLEX Test #,flex_test_no,274,274,0,0.0,0,0
+All,FLEX Identifier,flex_identifier,274,274,0,0.0,0,0
+All,Test Date,test_date,274,274,0,0.0,0,0
+All,Test GMT,test_gmt,274,273,1,0.4,1,0
+All,Fuel,fuel,274,274,0,0.0,0,0
+All,Ambient pressure; mmHg,pressure_mmHg,274,274,0,0.0,0,0
+All,O initial ambient composition; mole fraction,o2_mf,274,274,0,0.0,0,0
+All,N initial ambient composition; mole fraction,n2_mf,274,274,0,0.0,0,0
+All,CO initial ambient composition; mole fraction,co_mf,274,274,0,0.0,0,0
+All,He initial ambient composition; mole fraction,he_mf,274,274,0,0.0,0,0
+All,Droplet initial diameter; mm,d0_mm,274,262,12,4.4,4,8
+All,Visible flame extinction diameter; mm,d_ext_mm,274,197,77,28.1,43,34
+All,Burning rate; mm,burn_rate,274,258,16,5.8,8,8
+All,Burn time; s,burn_time_s,274,268,6,2.2,3,3
+All,Test end,test_end,274,274,0,0.0,0,0

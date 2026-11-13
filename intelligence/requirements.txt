@@ -1,0 +1,10 @@
+# FLEX-PSI69 evidence intelligence dependencies (project-local venv).
+#   notebooks/.venv/bin/pip install -r intelligence/requirements.txt
+numpy>=2.0
+pandas>=2.0
+fastapi>=0.110
+uvicorn>=0.29
+# httpx only needed for the test suite (FastAPI TestClient)
+httpx>=0.27
+# /predict delegates to the prediction package; install its requirements too:
+#   notebooks/.venv/bin/pip install -r prediction/requirements.txt

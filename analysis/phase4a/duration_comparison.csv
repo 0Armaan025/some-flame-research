@@ -1,0 +1,12 @@
+analysis,group,metric,n_total,n_used,n_missing,n_approx_excluded,median,q1,q3,iqr,min,max,mean,sd,test_statistic,p_value,effect_size,ci,note
+B_duration,fuel=Methanol,burn_time_s_descriptive,157,155,1,1,12.1000,7.8500,17.9000,10.0500,0.3000,39.2000,13.5589,7.9109,,,,,Burn time (s); exact values only
+B_duration,fuel=Heptane,burn_time_s_descriptive,117,111,5,1,7.5000,3.3000,11.2500,7.9500,0.5500,24.0000,7.9286,5.7427,,,,,Burn time (s); exact values only
+B_duration,Methanol vs Heptane,burn_time_s_contrast,266,266,0,2,-4.6000,,,,,,,,MWU U=4838.0,1.17e-09,rank-biserial r=0.4376,,"Burn time (s) two-sided Mann-Whitney (asymptotic, tie- and continuity-corrected); descriptive contrast; independence assumption not established (Phase 3 R7 BLOCKED)"
+B_duration,"fuel=Methanol,outcome=Extinction",burn_time_s_descriptive,126,124,1,1,11.1000,7.6000,16.3500,8.7500,0.3000,39.2000,12.7027,7.9069,,,,,exact values only
+B_duration,"fuel=Methanol,outcome=Disruption",burn_time_s_descriptive,23,23,0,0,15.6000,13.6000,19.6500,6.0500,2.4000,30.7000,15.8565,6.6024,,,,,exact values only
+B_duration,"fuel=Methanol,outcome=Completion",burn_time_s_descriptive,8,8,0,0,20.8500,14.9000,25.5250,10.6250,10.3000,31.3000,20.2250,7.7555,,,,,exact values only
+B_duration,"fuel=Heptane,outcome=Extinction",burn_time_s_descriptive,60,59,1,0,4.3000,2.4500,8.0000,5.5500,0.5500,17.5000,5.1912,3.5052,,,,,exact values only
+B_duration,"fuel=Heptane,outcome=Disruption",burn_time_s_descriptive,38,34,4,0,11.6000,7.7000,17.4500,9.7500,1.7000,24.0000,12.4235,6.3337,,,,,exact values only
+B_duration,"fuel=Heptane,outcome=Completion",burn_time_s_descriptive,19,18,0,1,8.8500,2.8250,11.4750,8.6500,1.3000,17.1000,8.4111,5.1902,,,,,exact values only
+B_duration,fuel=Methanol,burn_time_s_approximate_verbatim,1,0,0,1,~6,,,,~6,~6,,,,,,,original string '~6' preserved; excluded from all statistics; identifier H01M104
+B_duration,fuel=Heptane,burn_time_s_approximate_verbatim,1,0,0,1,~9,,,,~9,~9,,,,,,,original string '~9' preserved; excluded from all statistics; identifier H01H102

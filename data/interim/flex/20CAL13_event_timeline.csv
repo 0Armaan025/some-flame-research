@@ -1,0 +1,16 @@
+event,time,event_type,timestamp,elapsed_from_ignition_s
+AS Setup Igniters to Ignite,13:25:00.868,observed_event,2009-04-10 13:25:00.868,-71.324
+AS Setup Completed,13:25:05.096,observed_event,2009-04-10 13:25:05.096,-67.096
+AS Started,13:25:47.540,observed_event,2009-04-10 13:25:47.540,-24.652
+AS FCF Diagnostics Delay,13:26:00.856,observed_event,2009-04-10 13:26:00.856,-11.336
+AS Dispense Start,13:26:03.866,observed_event,2009-04-10 13:26:03.866,-8.326
+AS Dispense Completed,13:26:05.162,observed_event,2009-04-10 13:26:05.162,-7.03
+AS Stretch Start,13:26:10.176,observed_event,2009-04-10 13:26:10.176,-2.016
+AS Stretch Completed,13:26:10.479,observed_event,2009-04-10 13:26:10.479,-1.713
+AS Needles Retract,13:26:11.674,observed_event,2009-04-10 13:26:11.674,-0.518
+AS Crew Light,13:26:11.690,observed_event,2009-04-10 13:26:11.690,-0.502
+AS Burn to Completion / Igniter On,13:26:12.192,reference_event,2009-04-10 13:26:12.192,0.0
+AS Igniter Off / Retract Start,13:26:13.195,observed_event,2009-04-10 13:26:13.195,1.003
+AS Retract Completed,13:26:13.624,observed_event,2009-04-10 13:26:13.624,1.432
+Programmed 20-second interval endpoint,13:26:32.192,programmed_endpoint_not_observed,2009-04-10 13:26:32.192,20.0
+AS Completed,13:26:55.324,observed_event,2009-04-10 13:26:55.324,43.132

@@ -1,0 +1,108 @@
+{
+  "dataset": {
+    "name": "FLEX-PSI69 Flame Extinguishment Experiment experimental table",
+    "records": 274,
+    "fuels": {
+      "Methanol": 157,
+      "Heptane": 117
+    },
+    "date_range": "2009-03-05 to 2011-12-08",
+    "source": "data/raw/flex/PSI-69 Experimental table_FLEX.csv",
+    "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+  },
+  "engine": {
+    "version": "1.0.0",
+    "method": "deterministic question-to-evidence pipeline; no machine learning, no LLM, no invented values; every number recomputed from the raw table or quoted from a frozen, hash-verified analysis artifact",
+    "integrity": [
+      "no imputation",
+      "no unit assignment to the unresolved burning-rate column",
+      "no renormalisation of compositions",
+      "no causal claims from observational comparisons",
+      "no synchronized time claims (clock domains unreconciled)"
+    ]
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "question": "How do methanol and heptane experimental outcomes differ?",
+      "variables": [
+        "fuel",
+        "outcome"
+      ],
+      "evidence_type": "recorded-label contingency",
+      "supports_comparison": false,
+      "caveat": "recorded labels, not measured physics; 'Disruption' undefined"
+    },
+    {
+      "id": "Q2",
+      "question": "How do their recorded burn-duration distributions differ?",
+      "variables": [
+        "fuel",
+        "burn_time_s"
+      ],
+      "evidence_type": "distribution comparison",
+      "supports_comparison": true,
+      "caveat": "descriptive; conditional on independence; start/stop undocumented"
+    },
+    {
+      "id": "Q3",
+      "question": "What evidence exists for the relationship between oxygen concentration and experimental outcomes?",
+      "variables": [
+        "o2_mf",
+        "outcome"
+      ],
+      "evidence_type": "descriptive association (confounded)",
+      "supports_comparison": false,
+      "caveat": "O2 confounded with diluent family and series outside the air family"
+    },
+    {
+      "id": "Q4",
+      "question": "Which experiments are comparable under specified oxygen/diluent conditions?",
+      "variables": [
+        "o2_mf",
+        "n2_mf",
+        "co2_mf",
+        "he_mf",
+        "pressure_mmHg"
+      ],
+      "evidence_type": "comparability classification",
+      "supports_comparison": true,
+      "parameters": {
+        "o2_mf": "optional: restrict cells to one oxygen level"
+      },
+      "caveat": "comparability is within-cell; identical reported values do not guarantee identical actual composition"
+    },
+    {
+      "id": "Q5",
+      "question": "What evidence exists for pressure-related differences?",
+      "variables": [
+        "pressure_mmHg"
+      ],
+      "evidence_type": "confounding disclosure",
+      "supports_comparison": false,
+      "caveat": "pressure and diluent confounded above 800 mmHg; no effect claimed"
+    },
+    {
+      "id": "Q6",
+      "question": "Which findings are sensitive to data-quality issues?",
+      "variables": [
+        "flags",
+        "identifier",
+        "measurement completeness"
+      ],
+      "evidence_type": "sensitivity analysis",
+      "supports_comparison": false,
+      "caveat": "quantified for the initial-diameter contrast; duration robust"
+    },
+    {
+      "id": "Q7",
+      "question": "What information is missing that prevents a stronger conclusion?",
+      "variables": [
+        "all measurement columns + evidence-level gaps"
+      ],
+      "evidence_type": "missingness and evidence-gap inventory",
+      "supports_comparison": false,
+      "caveat": "missingness mechanism unknown; nothing imputed"
+    }
+  ]
+}

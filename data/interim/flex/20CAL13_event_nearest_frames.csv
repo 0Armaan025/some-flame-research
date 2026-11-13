@@ -1,0 +1,46 @@
+segment,event,event_type,event_timestamp,nearest_img_num,nearest_frame_timestamp,frame_minus_event_s,image_available,image_status
+A,AS Setup Igniters to Ignite,observed_event,2009-04-10 13:25:00.868,0,2009-04-10 13:25:53.475186,52.607186,False,archive_missing
+A,AS Setup Completed,observed_event,2009-04-10 13:25:05.096,0,2009-04-10 13:25:53.475186,48.379186,False,archive_missing
+A,AS Started,observed_event,2009-04-10 13:25:47.540,0,2009-04-10 13:25:53.475186,5.935186,False,archive_missing
+A,AS FCF Diagnostics Delay,observed_event,2009-04-10 13:26:00.856,213,2009-04-10 13:26:00.841852,-0.01414800000000005,False,archive_missing
+A,AS Dispense Start,observed_event,2009-04-10 13:26:03.866,301,2009-04-10 13:26:03.875186,0.009186,False,archive_missing
+A,AS Dispense Completed,observed_event,2009-04-10 13:26:05.162,339,2009-04-10 13:26:05.175186,0.013186,False,archive_missing
+A,AS Stretch Start,observed_event,2009-04-10 13:26:10.176,484,2009-04-10 13:26:10.175186,-0.0008139999999999814,False,archive_missing
+A,AS Stretch Completed,observed_event,2009-04-10 13:26:10.479,493,2009-04-10 13:26:10.475186,-0.003813999999999984,False,archive_missing
+A,AS Needles Retract,observed_event,2009-04-10 13:26:11.674,528,2009-04-10 13:26:11.675186,0.001186,False,archive_missing
+A,AS Crew Light,observed_event,2009-04-10 13:26:11.690,528,2009-04-10 13:26:11.675186,-0.014813999999999994,False,archive_missing
+A,AS Burn to Completion / Igniter On,reference_event,2009-04-10 13:26:12.192,543,2009-04-10 13:26:12.208519,0.016519,False,archive_missing
+A,AS Igniter Off / Retract Start,observed_event,2009-04-10 13:26:13.195,572,2009-04-10 13:26:13.208519,0.013519,False,archive_missing
+A,AS Retract Completed,observed_event,2009-04-10 13:26:13.624,584,2009-04-10 13:26:13.608519,-0.015480999999999967,False,archive_missing
+A,Programmed 20-second interval endpoint,programmed_endpoint_not_observed,2009-04-10 13:26:32.192,1123,2009-04-10 13:26:32.208519,0.016519,False,archive_missing
+A,AS Completed,observed_event,2009-04-10 13:26:55.324,1124,2009-04-10 13:26:32.241852,-23.082148,False,archive_missing
+B,AS Setup Igniters to Ignite,observed_event,2009-04-10 13:25:00.868,0,2009-04-10 13:25:59.591852,58.723852,False,image_not_in_archive
+B,AS Setup Completed,observed_event,2009-04-10 13:25:05.096,0,2009-04-10 13:25:59.591852,54.495852,False,image_not_in_archive
+B,AS Started,observed_event,2009-04-10 13:25:47.540,0,2009-04-10 13:25:59.591852,12.051852,False,image_not_in_archive
+B,AS FCF Diagnostics Delay,observed_event,2009-04-10 13:26:00.856,37,2009-04-10 13:26:00.858519,0.002519,False,image_not_in_archive
+B,AS Dispense Start,observed_event,2009-04-10 13:26:03.866,124,2009-04-10 13:26:03.858519,-0.00748099999999996,False,image_not_in_archive
+B,AS Dispense Completed,observed_event,2009-04-10 13:26:05.162,161,2009-04-10 13:26:05.158519,-0.0034809999999999564,False,image_not_in_archive
+B,AS Stretch Start,observed_event,2009-04-10 13:26:10.176,307,2009-04-10 13:26:10.191852,0.015852,True,available_in_archive
+B,AS Stretch Completed,observed_event,2009-04-10 13:26:10.479,316,2009-04-10 13:26:10.491852,0.012852,True,available_in_archive
+B,AS Needles Retract,observed_event,2009-04-10 13:26:11.674,350,2009-04-10 13:26:11.658519,-0.015480999999999967,True,available_in_archive
+B,AS Crew Light,observed_event,2009-04-10 13:26:11.690,351,2009-04-10 13:26:11.691852,0.001852,True,available_in_archive
+B,AS Burn to Completion / Igniter On,reference_event,2009-04-10 13:26:12.192,365,2009-04-10 13:26:12.191852,-0.000148000000000037,True,available_in_archive
+B,AS Igniter Off / Retract Start,observed_event,2009-04-10 13:26:13.195,394,2009-04-10 13:26:13.191852,-0.0031480000000000397,True,available_in_archive
+B,AS Retract Completed,observed_event,2009-04-10 13:26:13.624,407,2009-04-10 13:26:13.625186,0.001186,True,available_in_archive
+B,Programmed 20-second interval endpoint,programmed_endpoint_not_observed,2009-04-10 13:26:32.192,945,2009-04-10 13:26:32.191852,-0.000148000000000037,True,available_in_archive
+B,AS Completed,observed_event,2009-04-10 13:26:55.324,1178,2009-04-10 13:26:40.225186,-15.098814,False,image_not_in_archive
+D,AS Setup Igniters to Ignite,observed_event,2009-04-10 13:25:00.868,0,2009-04-10 13:26:00.858519,59.990519,True,available_in_archive
+D,AS Setup Completed,observed_event,2009-04-10 13:25:05.096,0,2009-04-10 13:26:00.858519,55.762519,True,available_in_archive
+D,AS Started,observed_event,2009-04-10 13:25:47.540,0,2009-04-10 13:26:00.858519,13.318519,True,available_in_archive
+D,AS FCF Diagnostics Delay,observed_event,2009-04-10 13:26:00.856,0,2009-04-10 13:26:00.858519,0.002519,True,available_in_archive
+D,AS Dispense Start,observed_event,2009-04-10 13:26:03.866,87,2009-04-10 13:26:03.858519,-0.00748099999999996,True,available_in_archive
+D,AS Dispense Completed,observed_event,2009-04-10 13:26:05.162,125,2009-04-10 13:26:05.158519,-0.0034809999999999564,True,available_in_archive
+D,AS Stretch Start,observed_event,2009-04-10 13:26:10.176,270,2009-04-10 13:26:10.158519,-0.01748099999999997,True,available_in_archive
+D,AS Stretch Completed,observed_event,2009-04-10 13:26:10.479,279,2009-04-10 13:26:10.491852,0.012852,True,available_in_archive
+D,AS Needles Retract,observed_event,2009-04-10 13:26:11.674,313,2009-04-10 13:26:11.675186,0.001186,True,available_in_archive
+D,AS Crew Light,observed_event,2009-04-10 13:26:11.690,313,2009-04-10 13:26:11.675186,-0.014813999999999994,True,available_in_archive
+D,AS Burn to Completion / Igniter On,reference_event,2009-04-10 13:26:12.192,328,2009-04-10 13:26:12.208519,0.016519,True,available_in_archive
+D,AS Igniter Off / Retract Start,observed_event,2009-04-10 13:26:13.195,357,2009-04-10 13:26:13.175186,-0.019814,True,available_in_archive
+D,AS Retract Completed,observed_event,2009-04-10 13:26:13.624,369,2009-04-10 13:26:13.608519,-0.015480999999999967,True,available_in_archive
+D,Programmed 20-second interval endpoint,programmed_endpoint_not_observed,2009-04-10 13:26:32.192,908,2009-04-10 13:26:32.191852,-0.000148000000000037,True,available_in_archive
+D,AS Completed,observed_event,2009-04-10 13:26:55.324,1372,2009-04-10 13:26:48.241852,-7.082148,False,image_not_in_archive

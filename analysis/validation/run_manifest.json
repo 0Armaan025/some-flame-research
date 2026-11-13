@@ -1,0 +1,105 @@
+{
+  "analysis": "FLEX PSI-69 Phase 3 scientific validation",
+  "script": {
+    "name": "run_validation.py",
+    "version": "3.0.0",
+    "entrypoint": "notebooks/.venv/bin/python analysis/validation/run_validation.py"
+  },
+  "executed_utc": "2026-11-12T16:17:13.611922+00:00",
+  "environment": {
+    "python": "3.14.9",
+    "platform": "Linux-7.2.14-arch1-1-x86_64-with-glibc2.44",
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2"
+  },
+  "inputs": [
+    {
+      "path": "data/raw/flex/PSI-69 Experimental table_FLEX.csv",
+      "sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96",
+      "records": 274,
+      "encoding": "latin-1 byte-preserving; 0x96 = missing marker"
+    }
+  ],
+  "documents_inspected": [
+    "docs/flex/FLEX_EIRD_v4.pdf",
+    "docs/flex/FLEX_Test_Plan.pdf",
+    "docs/flex/FLEX Engineering Requirements Document.pdf",
+    "docs/flex/FLEX DoD.docx",
+    "docs/flex/FLEX Overall Ext File-2.pdf",
+    "docs/flex/i_Investigation.txt",
+    "schema/v1.2.0.sql",
+    "data/raw/flex/part-01/* (8 runs telemetry)",
+    "data/raw/flex/part-01/*.zip (archive listings)",
+    "analysis/audit/*",
+    "analysis/exploratory/*"
+  ],
+  "integrity": {
+    "protected_files": 30,
+    "unchanged": 30,
+    "changed": []
+  },
+  "recomputed": {
+    "n_records": 274,
+    "n_methanol": 157,
+    "n_heptane": 117,
+    "n_complete_core": 196,
+    "n_distinct_dates": 80,
+    "max_records_per_date": 9,
+    "n_series_prefixes": 81,
+    "largest_series_prefix": [
+      "C03",
+      13
+    ],
+    "families_methanol": 46,
+    "families_heptane": 37,
+    "families_shared": 31,
+    "records_in_shared_families_methanol": 115,
+    "records_in_shared_families_heptane": 106,
+    "o2_levels_methanol": 15,
+    "o2_levels_heptane": 14,
+    "pressure_bands_methanol": {
+      "560-800 mmHg": 85,
+      ">2100 mmHg": 2,
+      "800-2100 mmHg": 5,
+      "<560 mmHg": 65
+    },
+    "pressure_bands_heptane": {
+      "560-800 mmHg": 76,
+      ">2100 mmHg": 1,
+      "800-2100 mmHg": 1,
+      "<560 mmHg": 39
+    },
+    "n_above_800_mmHg": 9,
+    "families_above_800_mmHg": 1,
+    "identifier_collision_193F001_count": 2
+  },
+  "outputs": {
+    "validation_checks.csv": {
+      "sha256": "65f868ba6daa12552ee8ab3325b4f1a40236fe00cdf330b861a0d5fe623ffec3",
+      "rows": 35
+    },
+    "evidence_register.csv": {
+      "sha256": "10ab33b3cd7a9021302d96afbf592b62aa5bcfdf21301943c4014130cfcf09bb",
+      "rows": 29
+    },
+    "validation_matrix.csv": {
+      "sha256": "5f261698ea069c1537feefacde8ccf2508810baf112c21b100669742e09bccad",
+      "rows": 15
+    }
+  },
+  "restrictions": {
+    "modelling": "none performed - no d2-law, no constants, no ML",
+    "unit_assignment": "none - burning-rate unit remains UNVERIFIED",
+    "imputation": "none",
+    "renormalisation": "none",
+    "chemical_extinction": "not claimed anywhere"
+  },
+  "limitations": [
+    "All documentary evidence is specification-level (requirements documents), not calibration or verification records.",
+    "The PSI-69 table provenance lacks a DOI/version reference.",
+    "Outcome label 'Disruption' is undocumented in inspected sources.",
+    "Per-run temperature, gravity, fiber usage and gas-charge verification are unavailable for 266 of 274 records.",
+    "Clock offsets are observed but not reconciled; no merged timeline is produced.",
+    "Image archives were listed, not extracted; no image-derived measurement is claimed."
+  ]
+}
